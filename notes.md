@@ -64,4 +64,4 @@ So how could we conditionally render these elements, depending on whether our pr
   - v-show
 - If whatever is inside the directive’s quotes is truthy, the element will display.
 - You can use expressions inside the directive’s quotes.
-- V-show only toggles visibility, it does not `insert or remove` the element from the DOM.
+- V-show only toggles visibility, it does not `insert` or `remove` the element from the DOM.
