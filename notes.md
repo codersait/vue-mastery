@@ -21,3 +21,24 @@ The reason Vue is able to display product ‘s value immediately is because Vue 
 - Vue is reactive
 
 ## Attribute Binding
+
+### Our Goal
+
+We’ll use attribute-binding in order to display an image and attach alt text to it based on values from our instance’s data.
+
+### Problem
+
+We want an image to show up on our page, but we need it to be dynamic. We want to be able to update that image in our data and have the image automatically update on the page. Since our `src` attribute is what pulls the image into this element, we’ll need data to be bound to `src` so that we can dynamically display an image based on the data at that time.
+
+### Important Term: Data Binding
+
+When we talk about data binding in Vue, we mean that the place where it is used or displayed in the template is directly linked, or bound to the source of the data, which is the data object inside the Vue instance.
+
+In other words, the host of the data is linked to the target of the data. In this case, our data is hosted by the data property of our Vue instance. And we want to target that data from our `src`.
+
+### Result
+
+- Data can be bound to HTML attributes.
+- Syntax is `v-bind:` or `:`for short.
+- The attribute name that comes after the `:` specifies the attribute we’re binding data to.
+- Inside the attribute’s quotes, we reference the data we’re binding to.
